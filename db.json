@@ -1,0 +1,102 @@
+{
+  "productList": [
+    {
+      "name": "suzuki",
+      "model": "GSX-R750",
+      "store": "10",
+      "seller": "American Bike",
+      "price": "12000$",
+      "id": 2
+    },
+    {
+      "name": "suzuki",
+      "model": "GSX-Z12",
+      "store": "2",
+      "seller": "American Bike",
+      "price": "5000$",
+      "id": 3
+    },
+    {
+      "name": "suzuki",
+      "model": "HR-20",
+      "store": "6",
+      "seller": "American Bike",
+      "price": "5000$",
+      "id": 4
+    },
+    {
+      "name": "suzuki",
+      "model": "MN13",
+      "store": "3",
+      "seller": "American Bike",
+      "price": "6930$",
+      "id": 5
+    },
+    {
+      "name": "SUZUKI",
+      "model": "MN166",
+      "store": "1",
+      "seller": "American Bike",
+      "price": "7900$",
+      "id": 6
+    },
+    {
+      "name": "SUZUKI",
+      "model": "KaZ-99",
+      "store": "7",
+      "seller": "American Bike",
+      "price": "6999$",
+      "id": 7
+    },
+    {
+      "name": "SuZuki",
+      "model": "MZAt-8",
+      "store": "3",
+      "seller": "American Bike",
+      "price": "19000$",
+      "id": 8
+    },
+    {
+      "name": "SUZUKI",
+      "model": "MK-300",
+      "store": "1",
+      "seller": "American Bike",
+      "price": "20000$",
+      "id": 9
+    },
+    {
+      "name": "SUZUKI",
+      "model": "Kiss-3",
+      "store": "1",
+      "seller": "American Bike",
+      "price": "12000$",
+      "id": 10
+    },
+    {
+      "name": "suzuki",
+      "model": "LoA",
+      "store": "9",
+      "seller": "American Bike",
+      "price": "6900$",
+      "id": 11
+    },
+    {
+      "name": "11",
+      "model": "11",
+      "store": "11",
+      "seller": "11",
+      "price": "11",
+      "id": 12
+    }
+  ],
+  "cart": [
+    {
+      "name": "suzuki",
+      "model": "GSX-R750",
+      "store": "10",
+      "seller": "American Bike",
+      "price": "12000$",
+      "id": 2
+    }
+  ]
+}

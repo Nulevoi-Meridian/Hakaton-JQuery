@@ -1,0 +1,137 @@
+/*Обнуление стилей CSS*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+/* Container
+========== */
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+.cart__section {
+}
+.cart__main-title {
+    margin: 150px 0 50px;
+    font-size: 45px;
+}
+.cart__item {
+    
+}
+.item__inner {
+    padding: 10px 0;
+    border-top: 2px solid rgba(8, 8, 8, 0.5);
+    border-bottom: 2px solid rgba(8, 8, 8, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.item__img {
+    margin-right: 5px;
+}
+.item__text {
+    margin-right: 55px;
+}
+.item__text h3 {
+    font-weight: 500;
+}
+.item__text span {
+    font-size: 12px;
+}
+.item__qt {
+    margin-right: 10px;
+    border: 1px solid transparent;
+    background-color: rgb(239 239 239);
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 8px 0;
+}
+.item__remove {
+    background-color: transparent;
+}
+.item__plus {
+    background-color: transparent;
+}
+.item__money {
+    display: flex;
+    width: 75px;
+}
+.money__sum {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.money__rub {
+    font-size: 20px;
+}
+.cart__total-sum {
+    font-family: 'Knewave', cursive;
+    text-align: end;
+    margin-bottom: 50px;
+}
+.cart__total-sum span {
+    font-size: 25px;
+    margin-right: 5px;
+}
+.total__sum {
+    font-size: 25px;
+}
+.total__rub {
+    font-size: 25px;
+}
+.cart__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main__page-link button {
+    width: 160px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 15px;
+}
+.checkout-link button {
+    width: 160px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 15px;
+}
