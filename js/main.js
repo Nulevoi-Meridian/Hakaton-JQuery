@@ -8,9 +8,9 @@ let searchText = '';
 
 //Получаем данные с полей ввода
 $('.add__product').on('click', () => {
-    if (!$('.input__name').val() && !$('.input__model').val() && !$('.input__store').val() && !$('.input__seller').val() && !$('.input__price').val()) {
+    if (!$('.input__name').val() && !$('.input__model').val() && !$('.input__store').val() && !$('.input__seller').val() && !$('.input__price').val() && !$('.input__img').val()) {
         return alert('Заполните все поля')
-    } else if (!$('.input__name').val() || !$('.input__model').val() || !$('.input__store').val() || !$('.input__seller').val() || !$('.input__price').val()) {
+    } else if (!$('.input__name').val() || !$('.input__model').val() || !$('.input__store').val() || !$('.input__seller').val() || !$('.input__price').val() || !$('.input__img').val()) {
         return alert('Заполните все поля')
     }
     const newProduct = {
@@ -18,7 +18,8 @@ $('.add__product').on('click', () => {
         model: $('.input__model').val(),
         store: $('.input__store').val(),
         seller: $('.input__seller').val(),
-        price: $('.input__price').val()
+        price: $('.input__price').val(),
+        img: $('.input__img').val()
     }
     addNewProduct(newProduct)
     $('.form-control').val('');
@@ -45,16 +46,16 @@ async function renderPage() {
     returnData.forEach(item => {
         $('.product__list').append(`<div id=${item.id} class="product__items" data-aos="flip-right" data-aos-duration="1000">
         <div class="product__img">
-            <img src="./img/product/Suzuki 1.jpg" alt="" width="100%" height="auto">
+            <img src="${item.img}" alt="" width="100%" height="300px">
         </div>
         <div class="product__description">
             <div class="product__name">${item.name}</div>
             <div class="product__model">Модель: ${item.model}</div>
             <div class="product__store">Кол-во: ${item.store}</div>
             <div class="product__seller">Продавец: ${item.seller}</div>
-            <div class="product__price">Стоимость: ${item.price}</div>
+            <div class="product__price">Стоимость: ${item.price} $</div>
         </div>
-        <img id=${item.id} class="cart__icon"src="./img/icon/shopping-cart.svg" alt="" width="35px" height="auto">
+        <span id=${item.id} class="cart__icon">В корзину</span>
         <div class="item__operation">
             <div id=${item.id} class="edit__item">Редактировать</div>
             <div id=${item.id} class="del__item">Удалить</div>
@@ -96,10 +97,14 @@ async function editPersonData(editData) {
     $('.edit__store').val(returnData.store);
     $('.edit__seller').val(returnData.seller);
     $('.edit__price').val(returnData.price);
+    $('.edit__img').val(returnData.img);
 }
 
 //Отправляем обновленные данные в базу
 $('.btn__save').on('click', () => {
+    if (!$('.edit__name').val() || !$('.edit__model').val() || !$('.edit__store').val() || !$('.edit__seller').val() || !$('.edit__price').val() || !$('.edit__img').val()) {
+        return alert('Нельзя оставлять пустое поле')
+    }
     fetch(`${API}/${itemIdEdit}`, {
         method: 'PATCH',
         body: JSON.stringify({
@@ -107,7 +112,8 @@ $('.btn__save').on('click', () => {
             model: $('.edit__model').val(),
             store: $('.edit__store').val(),
             seller: $('.edit__seller').val(),
-            price: $('.edit__price').val()
+            price: $('.edit__price').val(),
+            img: $('.edit__img').val()
         }),
         headers: {
             'Content-Type': 'application/json; charset=utf-8'
@@ -126,10 +132,9 @@ function addPagination() {
         $('.pagination-item').remove();
         for(let i = pageCount; i >= 1; i--){
             $('.previous__btn').after(`
-            <li class="page-item pagination-item"><a class="page-link" href="#">${i}</a></li>
+            <li class="pagination-item"><a class="page-link" href="#">${i}</a></li>
             `)
         }
-
     })
 }
 
@@ -158,36 +163,31 @@ $('.form__search').on('input', (event) => {
 })
 
 //Корзина
-
 $('body').on('click', '.cart__icon', function (event) {
     itemIdEdit = event.target.id;
     fetch(`${API}/${itemIdEdit}`)
-        .then(res => res.json())
-        .then(data =>{
-
-            fetch(`${APICART}`, {
-                method: 'POST',
-                body: JSON.stringify(data),
-                headers: {
-                    'Content-Type': 'application/json; charset=utf-8'
-                }
-            })
-        }) 
-        
-        
+    .then(res => res.json())
+    .then(data =>{
+        fetch(`${APICART}`, {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8'
+            }
+        })
+    }) 
+    $('body').append('<span class="popup-add">Товар добавлен</span>')
+    setTimeout(function(){
+        $('.popup-add').fadeOut(2000)
+    }, 1000);
 })
 
-renderPage()
+
+    renderPage()
 
 
-$('.slider').slick({
-    dots: true,
-    speed: 1000,
-    easing: 'ease',
-    autoplay: true,
-    autoplaySpeed: 1000,
-    pauseOnHover: true,
-    fade: true,
-    cssEase: 'linear'
-});
+
+
+
+
 

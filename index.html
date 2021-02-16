@@ -18,26 +18,24 @@
                 <p>DARKSIDE</p>
                 <p>Bike Store</p>
             </div>
-            <div class="search__form">
-                <input type="text" class="form__search" placeholder="Найти">
-            </div>
-            <div class="header__cart">
-                <a href="./cart.html">
-                <span>Корзина</span>
-                <img src="./img/icon/shopping-cart.svg" width="25px">
-            </a>
-           </div>
-            
-
             <nav class="nav__end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary add__btn" data-toggle="modal" data-target="#exampleModal">Добавить
-                    товар</button>
+                <button type="button" class="btn btn-primary add__btn" data-toggle="modal"
+                    data-target="#exampleModal">Добавить товар</button>
+                    <div class="header__cart">
+                        <a href="./cart.html">
+                            <span class="span__count"></span>
+                            <img src="./img/icon/shopping-cart.svg" width="25px">
+                        </a>
+                    </div>
             </nav>
+        </div><!-- header__inner -->
+        <div class="search__form">
+            <input type="text" class="form__search" placeholder="Найти">
         </div>
         <!-- Modal -->
-        <div class="modal fade modal__win" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade modal__win" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -56,13 +54,17 @@
                                     <input type="text" class="form-control input__model" placeholder="Модель">
                                 </div>
                                 <div class="col mb-3">
-                                    <input type="text" class="form-control input__store" placeholder="Количество на складе">
+                                    <input type="text" class="form-control input__store"
+                                        placeholder="Количество на складе">
                                 </div>
                                 <div class="col mb-3">
                                     <input type="text" class="form-control input__seller" placeholder="Продавец">
                                 </div>
                                 <div class="col mb-3">
                                     <input type="text" class="form-control input__price" placeholder="Стоимость">
+                                </div>
+                                <div class="col mb-3">
+                                    <input type="text" class="form-control input__img" placeholder="Ссылка на файл">
                                 </div>
                             </div>
                         </form>
@@ -74,51 +76,32 @@
                 </div>
             </div>
         </div>
-        <!-- Products -->
-    </div>
+    </div> <!-- header -->
+
+    <!-- Products -->
     <section class="product__section">
         <div class="pagination">
             <span class="previous__btn">Previous</span>
             <span class="next__btn">Next</span>
         </div>
         <div class="product__list">
-                     
+
 
         </div>
-        
+
         <div class="edit__modal">
-            <div class="modal__inner"> 
+            <div class="modal__inner">
                 <input type="text" class="edit__name" placeholder="">
                 <input type="text" class="edit__model" placeholder="">
                 <input type="text" class="edit__store" placeholder="">
                 <input type="text" class="edit__seller" placeholder="">
                 <input type="text" class="edit__price" placeholder="">
+                <input type="text" class="edit__img" placeholder="">
                 <span class="btn__save">Сохранить</span>
                 <!-- <span class="btn__close">Закрыть</span> -->
-            </div>   
+            </div>
         </div>
     </section>
-
-
-    
-
-
-    <!-- Slider -->
-    <!-- <div class="slider">
-        <div class="slider__item">
-            <img src="./img/slider/1.jpg" width="800px" alt="">
-        </div>
-        <div class="slider__item">
-            <img src="./img/slider/2.jpg" width="800px" alt="">
-        </div>
-        <div class="slider__item">
-            <img src="./img/slider/3.jpg" width="800px" alt="">
-        </div>
-        <div class="slider__item">
-            <img src="./img/slider/4.jpg" width="800px" alt="">
-        </div>
-    </div> -->
-
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -129,8 +112,6 @@
         crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- Slick-слайдер -->
-    <script src="./js/slick.min.js"></script>
     <!-- Основной файл -->
     <script src="./js/main.js"></script>
     <!-- Анимации -->

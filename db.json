@@ -5,56 +5,63 @@
       "model": "GSX-R750",
       "store": "10",
       "seller": "American Bike",
-      "price": "12000$",
-      "id": 2
+      "price": "12000",
+      "id": 2,
+      "img": "https://lumenatic.com/wp-content/uploads/2016/03/20151114-Suzuki-GSX-R-750-001.jpg"
     },
     {
       "name": "suzuki",
       "model": "GSX-Z12",
       "store": "2",
       "seller": "American Bike",
-      "price": "5000$",
-      "id": 3
+      "price": "5000",
+      "id": 3,
+      "img": "https://www.asphaltandrubber.com/wp-content/gallery/harley-davidson-livewire-leak/Harley-Davidson-Livewire-electric-motorcycle-02.jpg"
     },
     {
       "name": "suzuki",
       "model": "HR-20",
       "store": "6",
       "seller": "American Bike",
-      "price": "5000$",
-      "id": 4
+      "price": "5000",
+      "id": 4,
+      "img": "https://img.wallpapersafari.com/desktop/1280/1024/26/58/djkxEC.jpg"
     },
     {
       "name": "suzuki",
       "model": "MN13",
       "store": "3",
       "seller": "American Bike",
-      "price": "6930$",
-      "id": 5
+      "price": "6930",
+      "id": 5,
+      "img": "https://wallpaperaccess.com/thumb/4441.jpg"
     },
     {
       "name": "SUZUKI",
       "model": "MN166",
       "store": "1",
       "seller": "American Bike",
-      "price": "7900$",
-      "id": 6
+      "price": "7900",
+      "id": 6,
+      "img": "https://wallpapercave.com/wp/wp3647916.jpg"
     },
     {
       "name": "SUZUKI",
       "model": "KaZ-99",
       "store": "7",
       "seller": "American Bike",
-      "price": "6999$",
-      "id": 7
+      "price": "6999",
+      "id": 7,
+      "img": "https://c4.wallpaperflare.com/wallpaper/916/69/228/black-background-motorbike-mv-augusta-wallpaper-preview.jpg"
     },
     {
       "name": "SuZuki",
       "model": "MZAt-8",
       "store": "3",
       "seller": "American Bike",
-      "price": "19000$",
-      "id": 8
+      "price": "19000",
+      "id": 8,
+      "img": "https://wallpapercave.com/wp/wp3647920.jpg"
     },
     {
       "name": "SUZUKI",
@@ -62,7 +69,8 @@
       "store": "1",
       "seller": "American Bike",
       "price": "20000$",
-      "id": 9
+      "id": 9,
+      "img": "https://www.motorbiscuit.com/wp-content/uploads/2020/06/2020-Ducati-Panigale-V2-1024x576.jpg"
     },
     {
       "name": "SUZUKI",
@@ -70,7 +78,8 @@
       "store": "1",
       "seller": "American Bike",
       "price": "12000$",
-      "id": 10
+      "id": 10,
+      "img": "https://p4.wallpaperbetter.com/wallpaper/790/148/62/ktm-rc8-motorcycle-vehicle-wallpaper-preview.jpg"
     },
     {
       "name": "suzuki",
@@ -78,25 +87,82 @@
       "store": "9",
       "seller": "American Bike",
       "price": "6900$",
-      "id": 11
+      "id": 11,
+      "img": "https://wallpaperaccess.com/full/163138.jpg"
     },
     {
-      "name": "11",
-      "model": "11",
-      "store": "11",
-      "seller": "11",
-      "price": "11",
-      "id": 12
+      "name": "Shaman",
+      "model": "P-89",
+      "store": "1",
+      "seller": "American Bike",
+      "price": "12400",
+      "id": 12,
+      "img": "https://c4.wallpaperflare.com/wallpaper/387/13/201/motogp-bike-4k-2017-race-bike-wallpaper-thumb.jpg"
+    },
+    {
+      "name": "suzuki",
+      "model": "B4B",
+      "store": "3",
+      "seller": "American Bike",
+      "price": "5400",
+      "img": "https://wallpapercave.com/wp/wp3647900.jpg",
+      "id": 13
+    },
+    {
+      "name": "HIkaido",
+      "model": "999",
+      "store": "2",
+      "seller": "American Bike",
+      "price": "5400",
+      "img": "https://wallpapercave.com/wp/wp3647894.jpg",
+      "id": 14
+    },
+    {
+      "name": "Kawasaki",
+      "model": "Kreto",
+      "store": "6",
+      "seller": "American Bike",
+      "price": "6800",
+      "img": "https://wallpaperaccess.com/full/35678.jpg",
+      "id": 15
+    },
+    {
+      "name": "Hans",
+      "model": "BR-90",
+      "store": "1",
+      "seller": "American Bike",
+      "price": "6780",
+      "img": "https://images.unsplash.com/photo-1473147437169-91ac8cebc017?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      "id": 16
     }
   ],
   "cart": [
     {
       "name": "suzuki",
-      "model": "GSX-R750",
-      "store": "10",
+      "model": "GSX-Z12",
+      "store": "2",
       "seller": "American Bike",
-      "price": "12000$",
-      "id": 2
+      "price": "5000",
+      "id": 3,
+      "img": "https://www.asphaltandrubber.com/wp-content/gallery/harley-davidson-livewire-leak/Harley-Davidson-Livewire-electric-motorcycle-02.jpg"
+    },
+    {
+      "name": "suzuki",
+      "model": "HR-20",
+      "store": "6",
+      "seller": "American Bike",
+      "price": "5000",
+      "id": 4,
+      "img": "https://img.wallpapersafari.com/desktop/1280/1024/26/58/djkxEC.jpg"
+    },
+    {
+      "name": "suzuki",
+      "model": "MN13",
+      "store": "3",
+      "seller": "American Bike",
+      "price": "6930",
+      "id": 5,
+      "img": "https://wallpaperaccess.com/thumb/4441.jpg"
     }
   ]
 }
